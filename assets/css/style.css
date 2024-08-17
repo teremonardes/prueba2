@@ -28,12 +28,75 @@ menu {
   background-color: rgb(109, 35, 68);
   color: white;
   display: flex;
+
   justify-content: center;
   grid-area: menu;
 }
 
+menu img {
+  width: 8rem;
+  background-color: white;
+  margin: 0;
+}
+
+.grid-container2 {
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-item {
+  width: 20rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border: solid 1px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.card-body {
+  flex-grow: 1;
+}
+
+.card-footer {
+  font-weight: 900;
+  background-color: rgb(109, 35, 68);
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.card-footer:hover {
+  background-color: rgb(125, 144, 174);
+}
+
+.card-header {
+  font-weight: 700;
+}
+
+.card img {
+  display: flex;
+  width: 15rem;
+  margin-left: 2rem;
+  transition: all 0.5s ease-in;
+}
+
+.card img:hover {
+  width: 19rem;
+  margin-left: 0;
+}
+
 main {
   grid-area: main;
+  background-color: white;
+  height: auto;
+  padding-left: 1rem;
+  display: flex;
 }
 footer {
   grid-area: footer;
@@ -41,37 +104,33 @@ footer {
   flex-direction: column;
   align-items: center;
   font-size: 0.8rem;
-  background-color:  rgb(109, 35, 68);
+  background-color: rgb(109, 35, 68);
   color: aliceblue;
 }
 
 .cordelia {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mail {
-    display: flex;
-       width: 100%;
-    justify-content:center;
-   
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .instagram {
-    display: flex; 
-    width: 100%;
-    justify-content: center;
-    margin-top: 0.5rem;
-     
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.5rem;
 }
 
-
-.mail i, .instagram i {
-    font-size: 1.2rem; 
-    color:  rgb(244, 242, 243);
-    margin-right: 0.5rem;
-  
-  }
-
+.mail i,
+.instagram i {
+  font-size: 1.2rem;
+  color: rgb(244, 242, 243);
+  margin-right: 0.5rem;
+}
 
 @media (max-width: 567px) {
   .nav {
@@ -83,10 +142,54 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-width: 100%;
+    width: 100%;
     padding: 1rem;
     grid-area: menu;
   }
+}
 
+@media (min-width: 568px) {
+  .flex-item-1 {
+    display: none;
+  }
+  .flex-item-2 {
+    display: none;
+  }
 
+  menu {
+    background-color: rgb(109, 35, 68);
+    color: white;
+    grid-area: menu;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  menu img {
+    width: 8rem;
+    background-color: white;
+  }
+
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header {
+      height: 10rem;
+
+  }
+  
+  header img {
+    height: 8rem;
+  }
+menu nav {
+color:white;
+}
 }

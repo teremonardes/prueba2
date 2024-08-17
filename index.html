@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <img
         src="assets/imgs/33947059-3155-b83a-e69c-5c0fb9546549.png"
         alt="logo"
@@ -25,38 +25,69 @@
     <div class="grid-container">
       <menu>
         <div class="menu-s flex">
+          <img
+            src="assets/imgs/33947059-3155-b83a-e69c-5c0fb9546549.png"
+            alt="logo"
+          />
           <div class="flex-item-1">Menú</div>
           <i class="flex-item-2 fa-solid fa-bars"></i>
         </div>
 
-        <nav class="nav flex-column">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link disabled">Disabled</a>
+        <nav class="nav">
+          <a class="nav-link activet text-white" aria-current="page" href="#header">Inicio</a>
+          <a class="nav-link text-white" href="#main">Productos</a>
+          <a class="nav-link text-white" href="#footer">Contacto</a>
         </nav>
       </menu>
-      <main>
-        <div class="cards">
-          <div class="card">
-            <div class="card-header">Card 1</div>
-            <div class="card-body">Lorem ipsum dolor sit amet consectetur</div>
-            <div class="card-footer">Footer</div>
-          </div>
-          <div class="card">
-            <div class="card-header">Card 2</div>
-            <div class="card-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              voluptate unde, qui natus amet deleniti esse iste excepturi sit
-              sequi a nesciunt error nostrum numquam, id quidem nisi. Eius,
-              maxime?
+      <main id="main">
+        <div class="grid-container2">
+          <div class="grid-item">
+            <div class="card" style="height: 473px;">
+              <img
+                src="assets/imgs/40536_1004_S1-1200x1200_900x.webp"
+                alt="lana"
+              />
+              <div class="card-header">Phildar Cabotine</div>
+              <div class="card-body">$5.990</div>
+              <div class="card-footer">Comprar</div>
             </div>
-            <div class="card-footer">Footer</div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                src="assets/imgs/Aqua-Sock-Blocker-_1_1_500x500.webp"
+                alt="bloqueador calcetin"
+              />
+              <div class="card-header" style="margin-top: 5rem">
+                Bloqueador Calcetín
+              </div>
+              <div class="card-body">$3.990</div>
+              <div class="card-footer">Comprar</div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img src="assets/imgs/Box-Set-1_1024x1024@2x.webp" alt="lana" />
+              <div class="card-header">Set Marcadores</div>
+              <div class="card-body">$34.990</div>
+              <div class="card-footer">Comprar</div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="card">
+              <img
+                src="assets/imgs/X_screenshot2020-06-27at19-36-441034_bfefe1a4-873e-429a-80bc-7b0f9041097e.webp"
+                alt="lana"
+              />
+              <div class="card-header">Phildar Rustique</div>
+              <div class="card-body">$5.990</div>
+              <div class="card-footer">Comprar</div>
+            </div>
           </div>
         </div>
       </main>
 
-      <footer>
+      <footer id="footer">
         <div class="instagram">
           <i class="fa-brands fa-instagram"> </i>
           <p>@tiendacordelia</p>
@@ -64,9 +95,8 @@
         <div class="mail">
           <i class="fa-solid fa-envelope"></i>
           <p>admin@cordelia.cl</p>
-          
         </div>
-        <div class="cordelia"> 2024 Cordelia</div>
+        <div class="cordelia">2024 Cordelia</div>
       </footer>
     </div>
   </body>
